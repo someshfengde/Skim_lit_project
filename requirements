@@ -1,5 +1,5 @@
 gdown 
 pandas 
-streamlit
-tensorflow
-numpy 
+numpy==1.19.5
+streamlit==0.82.0
+tensorflow==2.5.0
