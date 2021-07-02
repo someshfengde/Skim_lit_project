@@ -17,7 +17,10 @@ if text != None:
             final[y] = final[y].append(x)
             st.write(f'appended this {x}')
         final[y] = [x]
-       
-    st.write(final)
+    
+    for lab,val in final.items():
+        st.markdown(f'# {lab}')
+        for v in val:
+            st.markdown(f'### {v}')
     # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
     # st.write(labels)
