@@ -25,7 +25,7 @@ def split_char(text):
 def preprocess_text(text):
     sample = []
     
-    splitted_text = text.splitlines()
+    splitted_text = text.split(sep = '.')
 
     for line_no,line in enumerate(splitted_text):
         line_data  = {}
