@@ -9,12 +9,14 @@ if text != None:
     array_of_text_scentences, labels = get_prediction(text)
     st.subheader('Your simplified text is')
     arr = list(zip(array_of_text_scentences,labels))
+    final = {}
 
     for i in range(len(arr)):
         x,y = arr[i]
-        st.markdown(f'# {y}',)
-        st.markdown(f'### {x}')
-
-        st.write('\n\n\n')
+        if y in final : 
+            final[y] = final[y] + '\n' + x  
+        final[y] = x
+       
+    st.write(final)
     # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
     # st.write(labels)
