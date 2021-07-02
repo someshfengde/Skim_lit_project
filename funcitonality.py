@@ -1,8 +1,6 @@
 import tensorflow as tf 
 import pandas as pd 
 import numpy as np  
-physical_devices = tf.config.experimental.list_physical_devices('GPU')
-tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 class_names = ['BACKGROUND', 'CONCLUSIONS', 'METHODS', 'OBJECTIVE', 'RESULTS']
 
 def get_model(model_path):
