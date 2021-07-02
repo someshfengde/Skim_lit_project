@@ -12,9 +12,9 @@ if text != None:
 
     for i in range(len(arr)):
         x,y = arr[i]
-        st.markdown(f'#{y}',)
-        st.markdown(f'###{x}')
+        st.markdown(f'# {y}',)
+        st.markdown(f'### {x}')
 
-        st.wite('\n\n\n')
+        st.write('\n\n\n')
     # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
     # st.write(labels)
