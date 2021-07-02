@@ -19,10 +19,8 @@ if text != None:
         else:
             final[x] = [y]
 
-    st.write(final)
     
     for lab,val in final.items():
-        print(lab,val)
         st.markdown(f'# {lab}')
         for v in val:
             v = v.lower().replace('!@#$%^&*:",.<>\n',"")
