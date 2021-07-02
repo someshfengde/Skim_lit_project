@@ -14,7 +14,7 @@ if text != None:
     for i in range(len(arr)):
         x,y = arr[i]
         if y in final : 
-            final[y] = final[y].append('\n' + x)
+            final[y] = final[y][0] + '\n\n' + x
         final[y] = [x]
        
     st.write(final)
