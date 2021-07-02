@@ -9,6 +9,7 @@ if text != None:
     array_of_text_scentences, labels = get_prediction(text)
     st.subheader('Your simplified text is')
     arr = list(zip(array_of_text_scentences,labels))
+    st.write(arr)
     final = {}
 
     for i in range(len(arr)):
