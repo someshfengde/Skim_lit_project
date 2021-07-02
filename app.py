@@ -4,7 +4,7 @@ import gdown
 import zipfile
 
 gdown.download('https://drive.google.com/uc?id=1do7b5zE_Xf8gThqiGutgaILPSFE67rHs',output= './output.zip')
-with zipfile.ZipFile("/content/output.zip","r") as zip_ref:
+with zipfile.ZipFile("/output.zip","r") as zip_ref:
     zip_ref.extractall("./")
 
 
