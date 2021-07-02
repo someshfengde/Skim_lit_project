@@ -11,7 +11,7 @@ def download_and_unzip_model():
     with zipfile.ZipFile("./output.zip","r") as zip_ref:
         zip_ref.extractall("./")
 
-@st.cache(ttl = 500, max_entries = 1)
+@st.cache(ttl = 10000, max_entries = 1)
 def get_model(model_path):
     download_and_unzip_model()
     model = tf.keras.models.load_model(model_path)
