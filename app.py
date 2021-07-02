@@ -18,6 +18,8 @@ if text != None:
             final[x] = final[x].append(y)
             st.write(f'appended this {y} to **{x}**')
         final[x] = [y]
+
+        st.write(final)
     
     for lab,val in final.items():
         print(lab,val)
