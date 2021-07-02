@@ -8,7 +8,7 @@ text = st.text_area(label = 'Enter your text here ',height= 600,value= """Over o
 if text != None:  
     array_of_text_scentences, labels = get_prediction(text)
     st.subheader('Your simplified text is')
-    arr = list(zip(array_of_text_scentences,labels))
+    arr = list(zip(labels,array_of_text_scentences))
     st.write(arr)
     final = {}
 
@@ -20,6 +20,7 @@ if text != None:
         final[y] = [x]
     
     for lab,val in final.items():
+        print(lab,val)
         st.markdown(f'# {lab}')
         for v in val:
             st.markdown(f'### {v}')
