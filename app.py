@@ -17,7 +17,8 @@ if text != None:
         if str(x) in final: 
             final[x] = final[x].append(y)
             st.write(f'appended this {y} to **{x}**')
-        final[x] = [y]
+        else:
+            final[x] = [y]
 
         st.write(final)
     
