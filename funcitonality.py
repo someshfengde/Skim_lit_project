@@ -6,7 +6,6 @@ import gdown
 import zipfile
 class_names = ['BACKGROUND', 'CONCLUSIONS', 'METHODS', 'OBJECTIVE', 'RESULTS']
 
-@st.cache(ttl = 500, max_entries = 1)
 def download_and_unzip_model():
     gdown.download('https://drive.google.com/uc?id=1do7b5zE_Xf8gThqiGutgaILPSFE67rHs',output= './output.zip')
     with zipfile.ZipFile("./output.zip","r") as zip_ref:
