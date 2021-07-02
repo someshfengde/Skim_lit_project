@@ -14,10 +14,10 @@ if text != None:
 
     for i in range(len(arr)):
         x,y = arr[i]
-        if y in final.keys() : 
-            final[y] = final[y].append(x)
-            st.write(f'appended this {x}')
-        final[y] = [x]
+        if x in final.keys() : 
+            final[x] = final[x].append(y)
+            st.write(f'appended this {y} to **{x}**')
+        final[x] = [y]
     
     for lab,val in final.items():
         print(lab,val)
