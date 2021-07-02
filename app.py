@@ -8,6 +8,13 @@ text = st.text_area(label = 'Enter your text here ',height= 600,value= """Over o
 if text != None:  
     array_of_text_scentences, labels = get_prediction(text)
     st.subheader('Your simplified text is')
-    
-    st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
-    st.write(labels)
+    arr = list(zip(array_of_text_scentences,labels))
+
+    for i in range(len(arr)):
+        x,y = arr[i]
+        st.markdown(f'#{y}',)
+        st.markdown(f'###{x}')
+
+        st.wite('\n\n\n')
+    # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
+    # st.write(labels)
