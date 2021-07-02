@@ -24,8 +24,8 @@ if text != None:
     
     for lab,val in final.items():
         print(lab,val)
-        st.markdown(f'# {lab}')
+        st.header(f'# {lab}')
         for v in val:
-            st.markdown(f'### {v}')
+            st.subheader(f'### {v}')
     # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
     # st.write(labels)
