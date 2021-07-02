@@ -25,6 +25,7 @@ if text != None:
         print(lab,val)
         st.header(f'# {lab}')
         for v in val:
+            v = v.lower().replace('!@#$%^&*:",.<>\n',"")
             st.subheader(f'### {v}')
     # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
     # st.write(labels)
