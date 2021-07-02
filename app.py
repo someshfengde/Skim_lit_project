@@ -14,8 +14,8 @@ if text != None:
     for i in range(len(arr)):
         x,y = arr[i]
         if y in final : 
-            final[y] = final[y] + '\n' + x  
-        final[y] = x
+            final[y] = final[y].append('\n' + x)
+        final[y] = [x]
        
     st.write(final)
     # st.text_area(label='asdf',height = 600, value = array_of_text_scentences)
